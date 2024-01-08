@@ -109,7 +109,7 @@ If you need help for the exercises you can find a simple solution script
 
     # Create super basic logger
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
-    logger = logget.getLogger(__name__) # (1)
+    logger = logging.getLogger(__name__) # (1)
 
     # Logging levels (from lowest to highest priority)
     logger.debug("Used for debugging your code.")
@@ -196,10 +196,10 @@ If you need help for the exercises you can find a simple solution script
     script:
 
     ```python
-    logger.handlers[0] = RichHandler(markup=True)  # set rich handler
+    logger.root.handlers[0] = RichHandler(markup=True)  # set rich handler
     ```
 
-    and try re-running the script. Hopefully you should see something buitiful in your terminal like this:
+    and try re-running the script. Hopefully you should see something beautiful in your terminal like this:
 
     <figure markdown>
     ![Image](../figures/rich_terminal_logging.png){ width="700" }
