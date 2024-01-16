@@ -156,3 +156,7 @@ node_modules/
 latest_info.csv
 latest_repo_data.csv
 repo_data.csv
+
+# data
+s9_scalable_applications/data_faces/lfw2/
+s9_scalable_applications/data_faces/lfw2.zip
